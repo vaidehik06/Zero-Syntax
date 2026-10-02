@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ef4444;
+  --color-primary-hover: #dc2626;
+  --color-glass: rgba(15, 23, 42, 0.7);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: var(--color-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  }
+}
+
+body {
+  background-color: #020617;
+  color: #f8fafc;
+  background-image: radial-gradient(circle at 50% 0%, #1e293b, #020617 70%);
+  background-attachment: fixed;
+}
